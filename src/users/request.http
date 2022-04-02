@@ -3,13 +3,24 @@ POST http://localhost:3333/auth/signup
 content-type: application/json
 
 {
-  "email": "test@test.com",
+  "email": "test2@test.com",
   "password": "1223",
   "assd": "asdsad"
 }
 
+### Signin
+POST http://localhost:3333/auth/signin
+content-type: application/json
+
+{
+  "email": "test2@test.com",
+  "password": "1223",
+  "assd": "asdsad"
+}
+
+
 ### Finad a particular user wwith a given ID
-GET http://localhost:3333/auth/2
+GET http://localhost:3333/auth/4
 
 ### Fina all users with a give email
 GET http://localhost:3333/auth?email=test@test.com
