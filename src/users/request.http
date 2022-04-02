@@ -3,7 +3,7 @@ POST http://localhost:3333/auth/signup
 content-type: application/json
 
 {
-  "email": "test2@test.com",
+  "email": "test3@test.com",
   "password": "1223",
   "assd": "asdsad"
 }
@@ -13,10 +13,17 @@ POST http://localhost:3333/auth/signin
 content-type: application/json
 
 {
-  "email": "test2@test.com",
+  "email": "test3@test.com", 
   "password": "1223",
   "assd": "asdsad"
 }
+
+### Get the currently signed in user
+GET http://localhost:3333/auth/whoami
+
+
+### Signout
+POST http://localhost:3333/auth/signout
 
 
 ### Finad a particular user wwith a given ID
@@ -35,3 +42,11 @@ content-type: application/json
 {
   "email": "aaaaa@aa.com"
 }
+
+
+###Set a color
+GET http://localhost:3333/auth/colors/red
+
+
+### Get the color
+GET http://localhost:3333/auth/colors
