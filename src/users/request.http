@@ -7,3 +7,20 @@ content-type: application/json
   "password": "1223",
   "assd": "asdsad"
 }
+
+### Finad a particular user wwith a given ID
+GET http://localhost:3333/auth/2
+
+### Fina all users with a give email
+GET http://localhost:3333/auth?email=test@test.com
+
+### Delete user with given id
+DELETE  http://localhost:3333/auth/1
+
+### Update a user
+PATCH http://localhost:3333/auth/2
+content-type: application/json
+
+{
+  "email": "aaaaa@aa.com"
+}
