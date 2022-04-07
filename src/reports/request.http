@@ -1,4 +1,4 @@
-### Create a new user
+### Create a new car
 POST http://localhost:3333/reports
 content-type: application/json
 
