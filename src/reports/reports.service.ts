@@ -16,4 +16,14 @@ export class ReportsService {
 
     return this.report.save(report);
   }
+
+  async changeApproval(id: string, approved: boolean) {
+    const report = await this.report.findOne(id);
+    if (!report) {
+      throw new NotFoundException('report not found');
+    }
+
+    report.approved = approved;
+    return this.report.save(report);
+  }
 }
